@@ -45,7 +45,7 @@ CREATE TABLE empleado (
 CREATE TABLE vendedor (
     idVendedor INT AUTO_INCREMENT PRIMARY KEY,
     idEmpleado INT,
-    FOREIGN KEY (idEmpleado) REFERENCES vendedor(idEmpleado)
+    FOREIGN KEY (idEmpleado) REFERENCES empleado(idEmpleado)
 );
 
 CREATE TABLE ubicacion (
